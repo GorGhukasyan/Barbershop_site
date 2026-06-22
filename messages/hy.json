@@ -1,0 +1,169 @@
+{
+  "common": {
+    "book": "Ամրագրել",
+    "cancel": "Չեղարկել",
+    "confirm": "Հաստատել",
+    "back": "Վերադառնալ",
+    "next": "Հաջորդ",
+    "close": "Փակել",
+    "loading": "Բեռնվում է...",
+    "error": "Սխալ է տեղի ունեցել",
+    "save": "Պահպանել",
+    "edit": "Խմբագրել",
+    "delete": "Ջնջել",
+    "yes": "Այո",
+    "no": "Ոչ"
+  },
+  "nav": {
+    "home": "Գլխավոր",
+    "services": "Ծառայություններ",
+    "barbers": "Վարսավիրներ",
+    "gallery": "Պատկերասրահ",
+    "booking": "Ամրագրում",
+    "visualizer": "AI Ոճ",
+    "contact": "Կապ"
+  },
+  "metadata": {
+    "title": "GA BARBER SHOP — Nor Nork, Երևան",
+    "description": "Մասնագիտական վարսավիրանոց Նոր Նորքում: Ծառայություններ՝ Մազ, Մորուք, Ձևավորում: AI Ոճ Visualizer: Առցանց ամրագրում"
+  },
+  "footer": {
+    "tagline": "Nor Nork-ի պրոֆեսիոնալ վարսավիրանոց 10 տարվա փորձով",
+    "hours": "Աշխատաժամեր",
+    "weekdays": "Երկ–Ուրբ",
+    "weekends": "Շաբ–Կիր",
+    "contact": "Կապ",
+    "address": "Totovents 1/2, Nor Nork, Երևան",
+    "rights": "Բոլոր իրավունքները պաշտպանված են"
+  },
+  "home": {
+    "hero": {
+      "pretitle": "Nor Nork, Yeravan",
+      "title1": "Ձեր ոճը",
+      "title2": "մեր արվեստն է",
+      "subtitle": "Մասնագիտական կտրվածք, մորուքի ձևավորում և AI-ի օգնությամբ ոճի վիզուալիզացիա — GA BARBER SHOP-ում",
+      "cta_book": "Ամրագրել հիմա",
+      "cta_visualize": "Փորձել AI ոճ",
+      "stat_years": "Տարի փորձ",
+      "stat_masters": "Վարպետ",
+      "stat_clients": "Բավ. հաճախորդ"
+    },
+    "services": {
+      "title": "Ծառայություններ",
+      "subtitle": "Ամեն ծառայություն կատարվում է բարձր մակարդակի նյութերով",
+      "book": "Ամրագրել"
+    },
+    "barbers": {
+      "title": "Մեր Թիմը",
+      "subtitle": "Մասնագիտական վարպետներ, ովքեր հոգ են տանում ձեր արտաքինի մասին"
+    },
+    "visualizer": {
+      "title": "AI Ոճ Visualizer",
+      "subtitle": "Բեռնեք ձեր լուսանկարը, ընտրեք ոճ — տեսեք ինչ կնայեք",
+      "cta": "Փորձել AI"
+    },
+    "hours": {
+      "title": "Աշխատաժամեր"
+    },
+    "contact": {
+      "title": "Կապ",
+      "name": "Ձեր անունը",
+      "email": "Էլ. փոստ",
+      "phone": "Հեռ. (պարտ. չէ)",
+      "message": "Հաղորդագրություն",
+      "submit": "Ուղարկել",
+      "success": "Հաղորդագրությունն ուղարկված է",
+      "error": "Սխալ: Կրկին փorձе"
+    }
+  },
+  "booking": {
+    "title": "Ամրագրում",
+    "step1": {
+      "title": "Ընտրեք ծառայություն",
+      "subtitle": "Ո՞ր ծառայությամբ ցանկանում եք օգտվել այսօր"
+    },
+    "step2": {
+      "title": "Ընտրեք վարսավիր",
+      "subtitle": "Ընտրեք մեր թիմի անդամներից",
+      "any_barber": "Ցանկացած վարպետ",
+      "any_barber_desc": "Ձե՛ր ամրագրման ժամին հասանելի առաջին վարպետը"
+    },
+    "step3": {
+      "title": "Ընտրեք ամսաթիվ և ժամ",
+      "subtitle": "Ընտրեք ձեզ հարմար ամսաթիվ",
+      "no_slots": "Այս օրը ազատ ժամ չկա: Փorձе ուրիշ ամсաatige",
+      "select_date_first": "Ընտրеите ams atige",
+      "back": "Հետ"
+    },
+    "step4": {
+      "title": "Ձեր տeղekautyunner",
+      "subtitle": "Ամрагрумот подтверждать ки имейлов",
+      "name": "Անուն Ազganun",
+      "email": "Электронnal почта",
+      "phone": "Baжarable+374...",
+      "notes": "Лишние замечания (पार्यав. che)",
+      "back": "Назад",
+      "next": "Hac erd"
+    },
+    "step5": {
+      "title": "Подтверждение",
+      "subtitle": "Verg Nayeк и amrграet",
+      "service": "Ծarayootyun",
+      "barber": "Varsamir",
+      "date": "Amsatив",
+      "time": "Zham",
+      "price": "Ges",
+      "client": "Dzer tvelyalnery",
+      "back": "Нazad",
+      "submit": "Amragrel",
+      "submitting": "Amsgravoum e..."
+    },
+    "success": {
+      "title": "Amsagrumы hast atvats e!",
+      "number_label": "Amsagrumi kodat",
+      "email_sent": "Hast atvman hastragutyun ouxarkvats e dzer email-in",
+      "back_home": "Возврат на главную",
+      "book_another": "Еще одна запись"
+    },
+    "error": {
+      "slot_taken": "Дур ess amsagrvats чar. Aynces хosel",
+      "general": "Skhalоtyun. Xndrume krknananer"
+    }
+  },
+  "visualizer": {
+    "title": "AI Ոճ Visualizer",
+    "subtitle": "Berenk dzer lusankary, entrek vochy — tesek inc knayek noy varceviri het",
+    "remaining": "Mnacel e {count} generation",
+    "back": "Хетев",
+    "generate": "AI-ov cnerel",
+    "try_again": "Кирcknananer",
+    "privacy_notice": "Dzer lusankary cheyi pahpanvoum mer server-nerum",
+    "upload": {
+      "title": "Bernek dzer lusankary",
+      "subtitle": "Кrakeqek kame soojet vra siretek file-y",
+      "hint": "JPEG, PNG, WebP · max 5MB"
+    },
+    "generating": {
+      "title": "AI-n katoum e dzez...",
+      "wait": "Sakheki 10-20 vayrkyan",
+      "msg1": "Verclutsnoum enk dzer dzhery...",
+      "msg2": "Yntroum enk lav vochy...",
+      "msg3": "AI-n kmбагrowum e...",
+      "msg4": "Aridk e gnoom..."
+    },
+    "result": {
+      "title": "Dzer ноур nerkakaycy!",
+      "before": "Awl",
+      "after": "Hetew",
+      "book_this_look": "Amsagrel аys вочин",
+      "download": "Berel lusankary",
+      "try_again": "Ноур vechy",
+      "disclaimer": "AI-i koghmic cnagrad patkery. Iravkakan ktrvatske karow e patchi fokhvatsnel"
+    },
+    "error": {
+      "rate_limit": "Ays vornakum 3 AI generation ek koranoumel: karavelootyoon chakvoume verjanagootyoumb",
+      "general": "AI-n chgog cnerel: Xndrvoum e krkнананel",
+      "network_error": "Kayeli sxalootyoon: Shaboumit ander krknananer"
+    }
+  }
+}

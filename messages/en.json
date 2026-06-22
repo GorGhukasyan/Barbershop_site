@@ -1,0 +1,158 @@
+{
+  "common": {
+    "book": "Book Now",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "back": "Back",
+    "next": "Next",
+    "close": "Close",
+    "loading": "Loading...",
+    "error": "An error occurred"
+  },
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "barbers": "Barbers",
+    "gallery": "Gallery",
+    "booking": "Book",
+    "visualizer": "AI Style",
+    "contact": "Contact"
+  },
+  "metadata": {
+    "title": "GA BARBER SHOP — Premium Barbershop in Yerevan",
+    "description": "Professional barbershop in Nor Nork, Yerevan. Classic haircuts, beard grooming, and AI hairstyle visualization."
+  },
+  "home": {
+    "hero": {
+      "pretitle": "Premium Barbershop in Yerevan",
+      "title1": "GA BARBER",
+      "title2": "SHOP",
+      "subtitle": "Classic craftsmanship meets modern style. Experience premium grooming with AI-powered hairstyle visualization.",
+      "cta_book": "Book Appointment",
+      "cta_visualize": "Try AI Visualizer",
+      "stat_years": "Years Experience",
+      "stat_masters": "Master Barbers",
+      "stat_clients": "Happy Clients"
+    },
+    "services": {
+      "title": "Our Services",
+      "subtitle": "Premium grooming services tailored to your style",
+      "book": "Book"
+    },
+    "barbers": {
+      "title": "Our Barbers",
+      "subtitle": "Meet the masters behind every great haircut"
+    },
+    "visualizer": {
+      "title": "AI Hairstyle Visualizer",
+      "subtitle": "Upload your photo and see how different hairstyles look on you before your appointment. Powered by AI.",
+      "cta": "Try It Now"
+    },
+    "hours": {
+      "title": "Working Hours",
+      "weekdays": "Monday – Friday",
+      "weekends": "Saturday – Sunday"
+    },
+    "contact": {
+      "title": "Contact Us",
+      "name": "Your Name",
+      "email": "Email",
+      "phone": "Phone",
+      "message": "Message",
+      "submit": "Send Message",
+      "success": "Message sent successfully!",
+      "error": "Failed to send message. Please try again."
+    }
+  },
+  "footer": {
+    "tagline": "Premium barbershop in the heart of Nor Nork, Yerevan. Where classic craft meets modern style.",
+    "hours": "Working Hours",
+    "contact": "Contact",
+    "address": "Nor Nork, Yerevan, Armenia",
+    "weekdays": "Mon–Fri",
+    "weekends": "Sat–Sun",
+    "rights": "All rights reserved."
+  },
+  "booking": {
+    "step1": {
+      "title": "Choose a Service",
+      "subtitle": "Select the service you'd like to book"
+    },
+    "step2": {
+      "title": "Choose a Barber",
+      "subtitle": "Select your preferred barber",
+      "no_barbers": "No barbers available at the moment",
+      "back": "Back"
+    },
+    "step3": {
+      "title": "Choose Date & Time",
+      "subtitle": "Pick a convenient date and time slot",
+      "no_slots": "No available slots for this day",
+      "select_date_first": "Select a date to see available times",
+      "back": "Back"
+    },
+    "step4": {
+      "title": "Your Contact Details",
+      "subtitle": "We need your details to confirm the booking",
+      "name": "Full Name",
+      "email": "Email",
+      "phone": "Phone Number",
+      "notes": "Additional Notes (optional)",
+      "back": "Back",
+      "next": "Continue"
+    },
+    "step5": {
+      "title": "Confirm Booking",
+      "subtitle": "Review your booking details",
+      "service": "Service",
+      "barber": "Barber",
+      "date": "Date",
+      "time": "Time",
+      "price": "Price",
+      "back": "Back",
+      "submit": "Confirm Booking",
+      "submitting": "Booking...",
+      "slot_taken": "This time slot was just taken. Please choose another time.",
+      "error": "Something went wrong. Please try again."
+    },
+    "success": {
+      "title": "Booking Confirmed!",
+      "number_label": "Your booking number:",
+      "email_sent": "A confirmation email has been sent to your inbox.",
+      "back_home": "Back to Home",
+      "book_another": "Book Another Appointment"
+    }
+  },
+  "visualizer": {
+    "title": "AI Hairstyle Visualizer",
+    "subtitle": "Upload your photo and see how different hairstyles look on you. Powered by AI.",
+    "remaining": "{count} generations remaining",
+    "back": "Back",
+    "generate": "Generate",
+    "try_again": "Try Again",
+    "privacy_notice": "Your photo is not stored and is deleted after processing.",
+    "error_general": "Something went wrong. Please try again.",
+    "upload": {
+      "title": "Upload Your Photo",
+      "subtitle": "Drag and drop or click to upload a selfie",
+      "hint": "JPEG, PNG, WebP — max 5MB"
+    },
+    "generating": {
+      "title": "Creating Your New Look...",
+      "wait": "This usually takes 8-15 seconds",
+      "msg1": "Analyzing your photo...",
+      "msg2": "Applying hairstyle...",
+      "msg3": "Fine-tuning details...",
+      "msg4": "Almost ready..."
+    },
+    "result": {
+      "title": "Your New Look!",
+      "before": "Before",
+      "after": "After",
+      "book_this_look": "Book This Look",
+      "download": "Download",
+      "try_again": "Try Another",
+      "disclaimer": "AI-generated result. The actual haircut may differ slightly."
+    }
+  }
+}

@@ -1,0 +1,145 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model Barber {
+  id           String   @id @default(uuid())
+  userId       String?  @map("user_id")
+  name         String
+  slug         String   @unique
+  bioHy        String   @default("") @map("bio_hy")
+  bioRu        String   @default("") @map("bio_ru")
+  bioEn        String   @default("") @map("bio_en")
+  photoUrl     String   @default("") @map("photo_url")
+  specialties  String[] @default([])
+  role         String   @default("barber")
+  isActive     Boolean  @default(true) @map("is_active")
+  sortOrder    Int      @default(0) @map("sort_order")
+  createdAt    DateTime @default(now()) @map("created_at")
+  updatedAt    DateTime @updatedAt @map("updated_at")
+
+  services     BarberService[]
+  workingHours WorkingHour[]
+  timeOff      TimeOff[]
+  appointments Appointment[]
+
+  @@map("barbers")
+}
+
+model Service {
+  id              String   @id @default(uuid())
+  nameHy          String   @map("name_hy")
+  nameRu          String   @map("name_ru")
+  nameEn          String   @map("name_en")
+  descriptionHy   String   @default("") @map("description_hy")
+  descriptionRu   String   @default("") @map("description_ru")
+  descriptionEn   String   @default("") @map("description_en")
+  durationMinutes Int      @map("duration_minutes")
+  priceAmd        Int      @map("price_amd")
+  category        String
+  icon            String   @default("scissors")
+  isActive        Boolean  @default(true) @map("is_active")
+  sortOrder       Int      @default(0) @map("sort_order")
+  createdAt       DateTime @default(now()) @map("created_at")
+  updatedAt       DateTime @updatedAt @map("updated_at")
+
+  barbers      BarberService[]
+  appointments Appointment[]
+
+  @@map("services")
+}
+
+model BarberService {
+  barberId  String @map("barber_id")
+  serviceId String @map("service_id")
+  barber    Barber  @relation(fields: [barberId], references: [id], onDelete: Cascade)
+  service   Service @relation(fields: [serviceId], references: [id], onDelete: Cascade)
+
+  @@id([barberId, serviceId])
+  @@map("barber_services")
+}
+
+model WorkingHour {
+  id         String  @id @default(uuid())
+  barberId   String  @map("barber_id")
+  dayOfWeek  Int     @map("day_of_week")
+  startTime  String  @map("start_time")
+  endTime    String  @map("end_time")
+  isWorking  Boolean @default(true) @map("is_working")
+  barber     Barber  @relation(fields: [barberId], references: [id], onDelete: Cascade)
+
+  @@unique([barberId, dayOfWeek])
+  @@map("working_hours")
+}
+
+model TimeOff {
+  id        String   @id @default(uuid())
+  barberId  String   @map("barber_id")
+  date      DateTime @db.Date
+  reason    String   @default("")
+  createdAt DateTime @default(now()) @map("created_at")
+  barber    Barber   @relation(fields: [barberId], references: [id], onDelete: Cascade)
+
+  @@unique([barberId, date])
+  @@map("time_off")
+}
+
+model Appointment {
+  id                String    @id @default(uuid())
+  appointmentNumber String    @unique @map("appointment_number")
+  barberId          String    @map("barber_id")
+  serviceId         String    @map("service_id")
+  clientName        String    @map("client_name")
+  clientEmail       String    @map("client_email")
+  clientPhone       String    @map("client_phone")
+  appointmentDate   DateTime  @db.Date @map("appointment_date")
+  startTime         String    @map("start_time")
+  endTime           String    @map("end_time")
+  status            String    @default("pending")
+  notes             String    @default("")
+  clientNotes       String    @default("") @map("client_notes")
+  locale            String    @default("hy")
+  createdAt         DateTime  @default(now()) @map("created_at")
+  updatedAt         DateTime  @updatedAt @map("updated_at")
+  confirmedAt       DateTime? @map("confirmed_at")
+  cancelledAt       DateTime? @map("cancelled_at")
+  completedAt       DateTime? @map("completed_at")
+
+  barber  Barber  @relation(fields: [barberId], references: [id])
+  service Service @relation(fields: [serviceId], references: [id])
+
+  @@index([barberId, appointmentDate])
+  @@index([appointmentDate, status])
+  @@map("appointments")
+}
+
+model GalleryImage {
+  id        String   @id @default(uuid())
+  url       String
+  altHy     String   @default("") @map("alt_hy")
+  altRu     String   @default("") @map("alt_ru")
+  altEn     String   @default("") @map("alt_en")
+  category  String
+  isActive  Boolean  @default(true) @map("is_active")
+  sortOrder Int      @default(0) @map("sort_order")
+  createdAt DateTime @default(now()) @map("created_at")
+
+  @@map("gallery_images")
+}
+
+model ContactMessage {
+  id        String   @id @default(uuid())
+  name      String
+  email     String
+  phone     String   @default("")
+  message   String
+  isRead    Boolean  @default(false) @map("is_read")
+  createdAt DateTime @default(now()) @map("created_at")
+
+  @@map("contact_messages")
+}
