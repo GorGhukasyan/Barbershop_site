@@ -50,7 +50,13 @@
       "PowerShell(winget install --id GitHub.cli -e)",
       "Bash(git remote *)",
       "Bash(git status *)",
-      "Bash(git add *)"
+      "Bash(git add *)",
+      "Bash(git rm *)",
+      "Bash(git reset *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git branch *)",
+      "Bash(git push *)",
+      "Bash(grep -oP 'book.{0,25}')"
     ]
   }
 }

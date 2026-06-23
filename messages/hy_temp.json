@@ -1,0 +1,76 @@
+{
+  "common": {
+    "book": "Ամրագրել",
+    "cancel": "Չեղարկել",
+    "confirm": "Հաստատել",
+    "back": "Վերադառնալ",
+    "next": "Հաջորդ",
+    "close": "Փակել",
+    "loading": "Բեռնվում է...",
+    "error": "Սխալ է տեղի ունեցել"
+  },
+  "nav": {
+    "home": "Գլխավոր",
+    "services": "Ծառայություններ",
+    "barbers": "Վարսավիրներ",
+    "gallery": "Պատկերասրահ",
+    "booking": "Ամրագրում",
+    "visualizer": "AI Ոճ",
+    "contact": "Կապ"
+  },
+  "metadata": {
+    "title": "GA BARBER SHOP — Ամրագրել",
+    "description": "Ծառայություններ, Վարսավիրներ"
+  },
+  "home": {
+    "hero": {
+      "pretitle": "Գլխավոր",
+      "title1": "GA BARBER",
+      "title2": "SHOP",
+      "subtitle": "Ծառայություններ",
+      "cta_book": "Ամրագրել",
+      "cta_visualize": "AI Ոճ",
+      "stat_years": "Years",
+      "stat_masters": "Masters",
+      "stat_clients": "Clients"
+    },
+    "services": {
+      "title": "Ծառայություններ",
+      "subtitle": "Ծառայություններ",
+      "book": "Ամրագրել"
+    },
+    "barbers": {
+      "title": "Վարսավիրներ",
+      "subtitle": "Վարսավիրներ"
+    },
+    "visualizer": {
+      "title": "AI Ոճ",
+      "subtitle": "AI Ոճ",
+      "cta": "Ամրագրել"
+    },
+    "hours": {
+      "title": "Hours",
+      "weekdays": "Weekdays",
+      "weekends": "Weekends"
+    },
+    "contact": {
+      "title": "Կապ",
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone",
+      "message": "Message",
+      "submit": "Send",
+      "success": "Success",
+      "error": "Սխալ է տեղի ունեցել"
+    }
+  },
+  "footer": {
+    "tagline": "GA BARBER SHOP",
+    "hours": "Hours",
+    "contact": "Կապ",
+    "address": "Address",
+    "weekdays": "Weekdays",
+    "weekends": "Weekends",
+    "rights": "All rights reserved."
+  }
+}

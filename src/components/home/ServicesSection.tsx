@@ -1,4 +1,5 @@
-import { getTranslations, getLocale } from 'next-intl/server';
+'use client';
+import { useTranslations, useLocale } from 'next-intl';
 import { Card } from '@/components/ui/Card';
 import { Button } from '@/components/ui/Button';
 import { formatPrice, formatDuration } from '@/lib/utils';
@@ -15,9 +16,9 @@ interface Service {
 
 const ICONS: Record<string, string> = { haircut: '✂️', beard: '🧔', styling: '💈' };
 
-export async function ServicesSection({ services }: { services: Service[] }) {
-  const t = await getTranslations('home.services');
-  const locale = await getLocale();
+export function ServicesSection({ services }: { services: Service[] }) {
+  const t = useTranslations('home.services');
+  const locale = useLocale();
 
   function getName(s: Service) {
     if (locale === 'ru') return s.nameRu;
@@ -46,7 +47,6 @@ export async function ServicesSection({ services }: { services: Service[] }) {
               <div className="text-4xl mb-4">{ICONS[service.category] || '✂️'}</div>
               <h3 className="font-serif text-xl text-cream mb-2">{getName(service)}</h3>
               <p className="text-cream-muted text-sm leading-relaxed flex-1">{getDescription(service)}</p>
-
               <div className="mt-6 pt-4 border-t border-gold/15 flex items-center justify-between">
                 <div>
                   <span className="text-gold font-bold text-xl">{formatPrice(service.priceAmd)}</span>

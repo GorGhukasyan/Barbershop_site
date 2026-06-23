@@ -1,7 +1,8 @@
-import { getTranslations } from 'next-intl/server';
+'use client';
+import { useTranslations } from 'next-intl';
 
-export async function Footer() {
-  const t = await getTranslations('footer');
+export function Footer() {
+  const t = useTranslations('footer');
 
   return (
     <footer className="bg-dark-2 border-t border-gold/15 py-12 mt-24">
@@ -14,7 +15,6 @@ export async function Footer() {
             </div>
             <p className="text-cream-muted text-sm leading-relaxed">{t('tagline')}</p>
           </div>
-
           <div>
             <h3 className="font-serif text-gold mb-4">{t('hours')}</h3>
             <div className="space-y-1 text-sm text-cream-muted">
@@ -22,7 +22,6 @@ export async function Footer() {
               <p>{t('weekends')}: 11:00 – 18:00</p>
             </div>
           </div>
-
           <div>
             <h3 className="font-serif text-gold mb-4">{t('contact')}</h3>
             <div className="space-y-2 text-sm text-cream-muted">
@@ -31,7 +30,6 @@ export async function Footer() {
             </div>
           </div>
         </div>
-
         <div className="mt-10 pt-6 border-t border-gold/10 text-center text-cream-dim text-xs">
           © 2026 GA BARBER SHOP. {t('rights')}
         </div>

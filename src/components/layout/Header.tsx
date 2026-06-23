@@ -1,11 +1,13 @@
+'use client';
 import Link from 'next/link';
-import { getTranslations, getLocale } from 'next-intl/server';
+import { useLocale, useTranslations } from 'next-intl';
+import { LanguageSwitcherClient } from './LanguageSwitcherClient';
 import { MobileMenu } from './MobileMenu';
 import { Button } from '@/components/ui/Button';
 
-export async function Header() {
-  const t = await getTranslations('nav');
-  const locale = await getLocale();
+export function Header() {
+  const t = useTranslations('nav');
+  const locale = useLocale();
 
   const navLinks = [
     { href: `/${locale}#services`, label: t('services') },
@@ -30,17 +32,14 @@ export async function Header() {
 
           <nav className="hidden md:flex items-center gap-6">
             {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className="text-sm text-cream-muted hover:text-gold transition-colors duration-200"
-              >
+              <Link key={link.href} href={link.href} className="text-sm text-cream-muted hover:text-gold transition-colors duration-200">
                 {link.label}
               </Link>
             ))}
           </nav>
 
           <div className="flex items-center gap-3">
+            <LanguageSwitcherClient />
             <a href={`/${locale}/booking`} className="hidden sm:inline-flex">
               <Button size="sm">{t('booking')}</Button>
             </a>

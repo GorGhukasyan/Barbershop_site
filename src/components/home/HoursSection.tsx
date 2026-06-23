@@ -1,8 +1,9 @@
-import { getTranslations } from 'next-intl/server';
+'use client';
+import { useTranslations } from 'next-intl';
 import { Card } from '@/components/ui/Card';
 
-export async function HoursSection() {
-  const t = await getTranslations('home.hours');
+export function HoursSection() {
+  const t = useTranslations('home.hours');
 
   return (
     <section className="py-24 px-4 bg-dark-2/50">
@@ -11,7 +12,6 @@ export async function HoursSection() {
           <h2 className="font-serif text-4xl text-cream mb-4">{t('title')}</h2>
           <div className="mt-4 h-px w-24 bg-gold/40 mx-auto" />
         </div>
-
         <Card className="max-w-lg mx-auto">
           <div className="space-y-4">
             <div className="flex justify-between items-center py-3 border-b border-gold/10">

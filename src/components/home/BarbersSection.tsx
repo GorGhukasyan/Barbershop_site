@@ -1,10 +1,10 @@
-import { getTranslations, getLocale } from 'next-intl/server';
+'use client';
+import { useTranslations, useLocale } from 'next-intl';
 import { Card } from '@/components/ui/Card';
 
 interface Barber {
   id: string;
   name: string;
-  slug: string;
   bioHy: string;
   bioRu: string;
   bioEn: string;
@@ -12,9 +12,9 @@ interface Barber {
   specialties: string[];
 }
 
-export async function BarbersSection({ barbers }: { barbers: Barber[] }) {
-  const t = await getTranslations('home.barbers');
-  const locale = await getLocale();
+export function BarbersSection({ barbers }: { barbers: Barber[] }) {
+  const t = useTranslations('home.barbers');
+  const locale = useLocale();
 
   function getBio(b: Barber) {
     if (locale === 'ru') return b.bioRu;
@@ -30,7 +30,6 @@ export async function BarbersSection({ barbers }: { barbers: Barber[] }) {
           <p className="text-cream-muted">{t('subtitle')}</p>
           <div className="mt-4 h-px w-24 bg-gold/40 mx-auto" />
         </div>
-
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {barbers.map((barber) => (
             <Card key={barber.id} hover className="text-center">
@@ -42,15 +41,11 @@ export async function BarbersSection({ barbers }: { barbers: Barber[] }) {
                 )}
               </div>
               <h3 className="font-serif text-xl text-cream mb-2">{barber.name}</h3>
-              {getBio(barber) && (
-                <p className="text-cream-muted text-sm leading-relaxed">{getBio(barber)}</p>
-              )}
+              {getBio(barber) && <p className="text-cream-muted text-sm leading-relaxed">{getBio(barber)}</p>}
               {barber.specialties.length > 0 && (
                 <div className="mt-4 flex flex-wrap justify-center gap-2">
                   {barber.specialties.map((s) => (
-                    <span key={s} className="px-3 py-1 text-xs rounded-full bg-gold/10 text-gold border border-gold/20">
-                      {s}
-                    </span>
+                    <span key={s} className="px-3 py-1 text-xs rounded-full bg-gold/10 text-gold border border-gold/20">{s}</span>
                   ))}
                 </div>
               )}
