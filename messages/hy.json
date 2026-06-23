@@ -82,90 +82,94 @@
     "title": "Ամրագրում",
     "step1": {
       "title": "Ընտրեք ծառայություն",
-      "subtitle": "Ո՞ր ծառայությամբ ցանկանում եք օգտվել այսօր"
+      "subtitle": "Ջր ծառայությամբ եք ուզում օգտվել"
     },
     "step2": {
       "title": "Ընտրեք վարսավիր",
       "subtitle": "Ընտրեք մեր թիմի անդամներից",
       "any_barber": "Ցանկացած վարպետ",
-      "any_barber_desc": "Ձե՛ր ամրագրման ժամին հասանելի առաջին վարպետը"
+      "any_barber_desc": "Առաջին հասանելի վարպետը",
+      "no_barbers": "Վարսավիրներ չկան",
+      "back": "Վերադառնալ"
     },
     "step3": {
       "title": "Ընտրեք ամսաթիվ և ժամ",
-      "subtitle": "Ընտրեք ձեզ հարմար ամսաթիվ",
-      "no_slots": "Այս օրը ազատ ժամ չկա: Փorձе ուրիշ ամсաatige",
-      "select_date_first": "Ընտրеите ams atige",
-      "back": "Հետ"
+      "subtitle": "Ընտրեք ձեզ հարմար օր",
+      "no_slots": "Այս օրը ազատ ժամ չկա",
+      "select_date_first": "Ընտրեք ամսաթիվ",
+      "back": "Վերադառնալ"
     },
     "step4": {
-      "title": "Ձեր տeղekautyunner",
-      "subtitle": "Ամрагрумот подтверждать ки имейлов",
-      "name": "Անուն Ազganun",
-      "email": "Электронnal почта",
-      "phone": "Baжarable+374...",
-      "notes": "Лишние замечания (पार्यав. che)",
-      "back": "Назад",
-      "next": "Hac erd"
+      "title": "Բեր տվյալները",
+      "subtitle": "Ռրացրեք հաստատման համար",
+      "name": "Անուն Ազգանուն",
+      "email": "Էլ. փոստ",
+      "phone": "Հեռախոս +374...",
+      "notes": "Լրացուցիչ նոտաներ (կամավոր)",
+      "back": "Վերադառնալ",
+      "next": "Հաջորդ"
     },
     "step5": {
-      "title": "Подтверждение",
-      "subtitle": "Verg Nayeк и amrграet",
-      "service": "Ծarayootyun",
-      "barber": "Varsamir",
-      "date": "Amsatив",
-      "time": "Zham",
-      "price": "Ges",
-      "client": "Dzer tvelyalnery",
-      "back": "Нazad",
-      "submit": "Amragrel",
-      "submitting": "Amsgravoum e..."
+      "title": "Հաստատում",
+      "subtitle": "Ստուգեք և հաստատեք",
+      "service": "Ծառայություն",
+      "barber": "Վարսավիր",
+      "date": "Ամսաթիվ",
+      "time": "Պամ",
+      "price": "Գին",
+      "back": "Վերադառնալ",
+      "submit": "Հաստատել",
+      "submitting": "Բեռնվում է...",
+      "slot_taken": "Այս ժամը արդեն զբաղված է",
+      "error": "Սխալ է տեղի ունեցել"
     },
     "success": {
-      "title": "Amsagrumы hast atvats e!",
-      "number_label": "Amsagrumi kodat",
-      "email_sent": "Hast atvman hastragutyun ouxarkvats e dzer email-in",
-      "back_home": "Возврат на главную",
-      "book_another": "Еще одна запись"
+      "title": "Ամրագրումը հաստատված է",
+      "number_label": "Ամրագրման կոդ",
+      "email_sent": "Հաստատման նամակը ուղարկված է ձեր էլ. փոստին",
+      "back_home": "Գլխավոր",
+      "book_another": "Ամրագրել"
     },
     "error": {
-      "slot_taken": "Дур ess amsagrvats чar. Aynces хosel",
-      "general": "Skhalоtyun. Xndrume krknananer"
+      "slot_taken": "Այս ժամը արդեն զբաղված է",
+      "general": "Սխալ է տեղի ունեցել"
     }
   },
   "visualizer": {
-    "title": "AI Ոճ Visualizer",
-    "subtitle": "Berenk dzer lusankary, entrek vochy — tesek inc knayek noy varceviri het",
-    "remaining": "Mnacel e {count} generation",
-    "back": "Хетев",
-    "generate": "AI-ov cnerel",
-    "try_again": "Кирcknananer",
-    "privacy_notice": "Dzer lusankary cheyi pahpanvoum mer server-nerum",
+    "title": "AI Ոճ Վիզուալիզատոր",
+    "subtitle": "Բեռնեք ձեր լուսանկարը, ընտրեք ոճը և տեսեք արդյունքը",
+    "remaining": "Մնացել է {count} գեներացիա",
+    "back": "Վերադառնալ",
+    "generate": "AI-ով ստեղծել",
+    "try_again": "Փորձել կրկին",
+    "privacy_notice": "Անձնական տվյալներ: ձեր լուսանկարը չի պահպանվում",
+    "error_general": "Սխալ է տեղի ունեցել",
     "upload": {
-      "title": "Bernek dzer lusankary",
-      "subtitle": "Кrakeqek kame soojet vra siretek file-y",
+      "title": "Բեռնեք ձեր լուսանկարը",
+      "subtitle": "Սեղմեք կամ ընտրեք ֆայլը",
       "hint": "JPEG, PNG, WebP · max 5MB"
     },
     "generating": {
-      "title": "AI-n katoum e dzez...",
-      "wait": "Sakheki 10-20 vayrkyan",
-      "msg1": "Verclutsnoum enk dzer dzhery...",
-      "msg2": "Yntroum enk lav vochy...",
-      "msg3": "AI-n kmбагrowum e...",
-      "msg4": "Aridk e gnoom..."
+      "title": "AI-ն մշակում է...",
+      "wait": "Սպասեք 10-20 վայրկյան",
+      "msg1": "Վերլուծում ենք լուսանկարը...",
+      "msg2": "Ընտրում ենք ոճը...",
+      "msg3": "AI-ն մշակում է...",
+      "msg4": "Գրեթե պատրաստ է..."
     },
     "result": {
-      "title": "Dzer ноур nerkakaycy!",
-      "before": "Awl",
-      "after": "Hetew",
-      "book_this_look": "Amsagrel аys вочин",
-      "download": "Berel lusankary",
-      "try_again": "Ноур vechy",
-      "disclaimer": "AI-i koghmic cnagrad patkery. Iravkakan ktrvatske karow e patchi fokhvatsnel"
+      "title": "Արդյունքը",
+      "before": "Առաջ",
+      "after": "Հետո",
+      "book_this_look": "Ամրագրել այս ոճը",
+      "download": "Բեռնել",
+      "try_again": "Փորձել նորից",
+      "disclaimer": "AI-ի կողմից ստեղծված արդյունք: Իրական կտրվածքը կարող է փոքր-ինչ տարբերվել"
     },
     "error": {
-      "rate_limit": "Ays vornakum 3 AI generation ek koranoumel: karavelootyoon chakvoume verjanagootyoumb",
-      "general": "AI-n chgog cnerel: Xndrvoum e krkнананel",
-      "network_error": "Kayeli sxalootyoon: Shaboumit ander krknananer"
+      "rate_limit": "Դուք օգտագործել եք 3 գեներացիա",
+      "general": "Սխալ է տեղի ունեցել",
+      "network_error": "Կապի սխալ: Փորձեք կրկին"
     }
   }
 }
