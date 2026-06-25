@@ -21,13 +21,12 @@ export default async function AdminDashboard({ params }: { params: Promise<{ loc
 
   if (!barber) redirect(`/${locale}/admin/login`);
 
-  const now = new Date();
-  const armeniaOffset = 4 * 60;
-  const armeniaTime = new Date(now.getTime() + (armeniaOffset + now.getTimezoneOffset()) * 60000);
-  const today = startOfDay(armeniaTime);
-  const tomorrow = addDays(today, 1);
-  const monthStart = startOfMonth(today);
-  const monthEnd = endOfMonth(today);
+  const today = new Date();
+  today.setUTCHours(0, 0, 0, 0);
+  const tomorrow = new Date(today);
+  tomorrow.setUTCDate(tomorrow.getUTCDate() + 1);
+  const monthStart = new Date(today.getUTCFullYear(), today.getUTCMonth(), 1);
+  const monthEnd = new Date(today.getUTCFullYear(), today.getUTCMonth() + 1, 0, 23, 59, 59);
 
   const barberFilter = barber.role !== 'admin' ? { barberId: barber.id } : {};
 
