@@ -12,15 +12,6 @@ export default async function AdminLayout({
 }) {
   const { locale } = await params;
 
-  // Login page doesn't need the sidebar
-  return (
-    <AdminLayoutInner locale={locale}>
-      {children}
-    </AdminLayoutInner>
-  );
-}
-
-async function AdminLayoutInner({ children, locale }: { children: React.ReactNode; locale: string }) {
   try {
     const supabase = await createClient();
     const { data: { user } } = await supabase.auth.getUser();
