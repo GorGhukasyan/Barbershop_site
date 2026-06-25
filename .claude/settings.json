@@ -56,7 +56,9 @@
       "Bash(git commit -m ' *)",
       "Bash(git branch *)",
       "Bash(git push *)",
-      "Bash(grep -oP 'book.{0,25}')"
+      "Bash(grep -oP 'book.{0,25}')",
+      "Bash(curl -s http://localhost:3000/api/barbers)",
+      "Bash(node -e \"const d=require\\('fs'\\).readFileSync\\(0,'utf8'\\);const j=JSON.parse\\(d\\);j.data.forEach\\(b=>console.log\\('Name:',b.name,'userId:',b.userId,'role:',b.role\\)\\)\")"
     ]
   }
 }

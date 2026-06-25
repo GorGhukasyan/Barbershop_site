@@ -21,7 +21,10 @@ export default async function AdminDashboard({ params }: { params: Promise<{ loc
 
   if (!barber) redirect(`/${locale}/admin/login`);
 
-  const today = startOfDay(new Date());
+  const now = new Date();
+  const armeniaOffset = 4 * 60;
+  const armeniaTime = new Date(now.getTime() + (armeniaOffset + now.getTimezoneOffset()) * 60000);
+  const today = startOfDay(armeniaTime);
   const tomorrow = addDays(today, 1);
   const monthStart = startOfMonth(today);
   const monthEnd = endOfMonth(today);
